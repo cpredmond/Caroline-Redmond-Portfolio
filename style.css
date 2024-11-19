@@ -1,0 +1,206 @@
+* {
+    margin: 0
+}
+
+body {
+    font-family: Open Sans;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+nav p {
+    padding: 12px;
+    font-size: 18px;
+}
+
+.intro-container {
+    display: flex;
+    height: 500px;
+    align-items: left;
+    justify-content: center;
+    background-color: lightgrey;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.intro-text-header {
+    font-size: 50px;
+    width: 500px;
+    font-family: Noto Serif;
+}
+
+.intro-text-subheader {
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: Open Sans;
+}
+
+.intro-button {
+    border: 1px solid;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.about-container {
+    display: flex;
+    height: 500px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-text,
+.about-image {
+    display: flex;
+    justify-content: center;
+    padding: 20px;  
+}
+
+.about-image {
+    height: 400px
+}
+
+.about-text {
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-family: Noto Serif;
+    font-size: 40px;
+}
+
+.about-text p {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightgrey;
+}
+
+.resume-experience, .resume-education, .resume-skills {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 20px;
+}
+
+.resume-experience-item,  .resume-education-item, .resume-skills-item {
+    margin-top: 10px;
+}
+
+.resume-experience h3, .resume-education h3, .resume-skills h3 {
+    font-family: Noto Serif;
+}
+
+.resume-skills-item {
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.portfolio-box {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "item1 item2"
+    "item3 item4"
+    "item5 item6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    margin: 10px;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+
+.portfolio-header {
+    grid-area: header;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    align-items: center;      /* Center vertically */
+    justify-content: center;
+    padding-top: 30px;
+    font-family: Noto Serif;
+}
+
+.portfolio-item-1, .portfolio-item-2, .portfolio-item-3, .portfolio-item-4, .portfolio-item-5, .portfolio-item-6 {
+    border: 1px solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    padding: 30px;
+    text-align: center;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio-item-1 {
+    grid-area: item1;
+}
+
+.portfolio-item-2 {
+    grid-area: item2;
+}
+
+.portfolio-item-3 {
+    grid-area: item3;
+}
+
+.portfolio-item-4 {
+    grid-area: item4;
+}
+
+.portfolio-item-5 {
+    grid-area: item5;
+}
+
+.portfolio-item-6 {
+    grid-area: item6;
+}
+
+footer {
+    height: 75px;
+    background-color: lightgrey;
+}
