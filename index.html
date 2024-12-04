@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+    <script defer src="script.js"></script>
     <title>Final Project</title>
 </head>
 <body>
     <header>
         <nav>
-            <p>About</p>
-            <p>Experience</p>
-            <p>Portfolio</p>
-            <p>Connect</p>
+            <p class="nav-item" data-target="about">About</p>
+            <p class="nav-item" data-target="experience">Experience</p>
+            <p class="nav-item" data-target="portfolio" >Portfolio</p>
+            <p class="nav-connect">
+                <a href="mailto:carolineredmond77@gmail.com?subject=Let's Connect!">Connect</a>
+            </p>
         </nav>
     </header>
 
@@ -31,21 +37,21 @@
             <p class="intro-text-subheader">I'm passionate about creating engaging digital experiences.</p>
         </div>
         <div class="intro-button">
-            <p>Say Hi!</p>
+            <a href="mailto:carolineredmond77@gmail.com?subject=Let's Connect!">Say Hi!</a>
         </div>
     </section>
 
-    <section class="about-container">
+    <section id="about" class="about-container">
         <div class="about-image">
             <img src="/images/3787c9dc4f0c13a5-sticker.png.PNG" alt="Bitmoji of a woman with brown hair and glasses">
         </div>
         <div class="about-text">
             <h2>Hello!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>I’m dedicated to creating dynamic and meaningful digital experiences and enjoy working on platforms that introduce and inform people about a company. In my current role as a Website and App Producer for Lifetime at A+E Networks, I manage website updates for hundreds of pages using a CMS, create and update pages using HTML, CSS, and Javascript, curate playlists and hubs for our streaming apps,  and collaborate closely with cross-functional teams to deliver impactful results.</p>
         </div>
     </section>
        
-    <section class="resume-container">
+    <section id="experience" class="resume-container">
         <div class="resume-experience">
             <h3>Experience</h3>
                 <div class="resume-experience-item">
@@ -82,7 +88,7 @@
                 <p>August 2013-April 2017</p>
             </div>
             <div class="resume-education-button">
-                <p>Download Full Resume</p>
+                <a href="https://www.linkedin.com/in/cpredmond/" target="blank">Connect on LinkedIn</a>
             </div>
         </div>
         <div class="resume-skills">
@@ -97,7 +103,7 @@
         </div>
     </section>
 
-    <section class="portfolio-container">
+    <section id="portfolio" class="portfolio-container">
         <div class="portfolio-box">
             <h1 class="portfolio-header">Writing</h1>
             <div class="portfolio-item-1"><a href="https://people.com/tv/today-kathie-lee-hoda-kotb-celebrate-10-years-on-the-air/" target="_blank">Today Show's Kathie Lee Gifford & Hoda Kotb Celebrate 10 Years on Air: 'We Just Laugh All the Time</a></div>
@@ -107,6 +113,7 @@
             <div class="portfolio-item-5"><a href="https://people.com/food/neil-patrick-harris-bubly-gif-campaign/" target="_blank">Neil Patrick Harris Partners with PepsiCo for a GIF-Centric Sparkling Water Campaign</a></div>
             <div class="portfolio-item-6"><a href="https://www.bustle.com/p/two-independent-single-moms-are-enough-to-lead-a-family-sitcom-says-ravens-home-star-anneliese-van-der-pol-68290" target="_blank">Why 'Raven's Home' Star Anneliese Van Der Pol Is "Proud" To Represent Single Moms</a></div>
         </div>
+    
         <div class="portfolio-box">
             <h1 class="portfolio-header">Coding</h1>
             <div class="portfolio-item-1">Project 1</div>
@@ -118,8 +125,18 @@
         </div>
     </section>
 
-    <footer>
-        <p>This is where my footer goes!</p>   
-    </footer>
+<footer>
+    <div>
+        <a href="https://www.linkedin.com/in/cpredmond/" target="blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="linkedin logo">
+        </a>
+        <a href="mailto:carolineredmond77@gmail.com?subject=Let's Connect!">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/2048px-Mail_%28iOS%29.svg.png" alt="email icon">
+        </a>
+    </div>  
+</footer>
+
+<button id="backToTopBtn" class="back-to-top-btn">↑ Back to Top</button>
+
 </body>
 </html>
